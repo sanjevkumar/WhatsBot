@@ -17,7 +17,7 @@ lines[22] = "username = '"+user+"'\n"
 if changepro == "y" or changepro == "Y":
     prodir = input("Enter Your Profile Name(eg: Profile 1): ")
     sysusername = getpass.getuser()
-    proloc = 'opt.add_argument("user-data-dir=C:\\Users\\'+sysusername+'\\AppData\\Local\\Google\\Chrome\\User Data\\'+prodi+'")'
+    proloc = 'opt.add_argument("user-data-dir=C:\\Users\\'+sysusername+'\\AppData\\Local\\Google\\Chrome\\User Data\\'+prodir+'")'
     lines[113] = proloc
 elif changepro == "n" or changepro == "N":
     print('Using Default Profile "Chrome\\User Data"')
