@@ -2,6 +2,12 @@ import os
 import getpass
 
 dir = os.getcwd()
+dirnew = ""
+for i in dir:
+    if i == "\\":
+        dirnew += "\\"
+    dirnew += i
+print(dirnew)
 
 # Print the current working directory
 print("Current working directory: {0}".format(dir))
@@ -11,7 +17,7 @@ changepro = input("Do You Want To Change Profile[Y|N]: ")
 
 whatsbot=open("WhatsBot.py","r")
 lines = whatsbot.readlines()
-lines[21] = "drivpath = '"+dir+"\chromedriver.exe'\n"
+lines[21] = "drivpath = '"+dirnew+"\chromedriver.exe'\n"
 lines[22] = "username = '"+user+"'\n"
 
 if changepro == "y" or changepro == "Y":
