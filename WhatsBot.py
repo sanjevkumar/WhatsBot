@@ -59,7 +59,7 @@ def connect():
 
 
 def message():
-    messages = ["Sorry Sanjev is sleeping now -SmartBot", "Sanjev is unavailable please text later -SmartBot", "Sanjev is busy right now Please text later -SmartBot"]
+    messages = ["Sorry {} is sleeping now -SmartBot", "{} is unavailable please text later -SmartBot", "{} is busy right now Please text later -SmartBot"]
     while True:
         sleep(3)
         print("\n\nChecking For New Message\n")
